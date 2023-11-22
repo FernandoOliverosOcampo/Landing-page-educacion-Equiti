@@ -1,0 +1,191 @@
+@import url(global.css);
+
+button{
+    height: 6vh;
+    width: 15vw;
+    background: rgb(235, 68, 46);;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 15px;
+}
+button:hover{
+    color: black;
+    background: white;
+    border: 1px solid;
+    
+}
+.contenedor-todo{
+    display: grid;
+    grid-template-areas: 
+    "informacion formulario";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    background-color: transparent;
+    padding: 20px;
+}
+.container-derecha{
+    grid-area: informacion;
+    display: grid;
+    grid-template-areas: 
+    "concepto";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    
+}
+
+.contenido-derecha-texto{
+    grid-area: concepto;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+.contenido-derecha-texto p{
+    text-align: center;
+   
+}
+.container-formulario{
+    grid-area: formulario;
+}
+.container-formulario{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "contenido";
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 40vw;
+    padding: 15px;
+}
+.titulo-formulario{
+    grid-area: titulo;
+}
+.contenido-formulario{
+    grid-area: contenido;
+    display: grid;
+    grid-template-areas: 
+    "formulario"
+    "botones";
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+    overflow: auto;
+    
+}
+.formulario-contenido{
+    grid-area: formulario;
+}
+.botones-formulario{
+    grid-area: botones;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.titulo__formulario{
+    font-size: 2.2vw;
+    text-align: center;
+}
+.contenido-formulario label{
+    padding-left: 15px;
+}
+.contenido-formulario input{
+    margin: 10px;
+    width: auto; 
+    height: 5vh;
+    width: 35vw;
+    padding-left: 10px;
+    border: transparent;
+    border-bottom: 1px solid #191919;
+    font-size: 1.2vw;
+}
+.contenido-formulario input:focus{
+    outline: none;
+}
+.contenido-formulario select{
+    margin: 15px;
+    width: auto; 
+    height: 5vh;
+    width: 36vw;
+    padding-left: 10px;
+    border: transparent;
+    border-bottom: 1px solid #191919;
+    font-size: 1.2vw;
+}
+.contenido-formulario select:focus{
+    outline: none;
+}
+@media only screen and (max-width: 600px) {
+    
+    button{
+    height: 5vh;
+    width: 41vw;
+    font-size: 4vw;
+    margin: 5px;
+    
+    }
+    
+    .contenedor-todo{
+        display: grid;
+        grid-template-areas: 
+        "informacion" 
+        "formulario";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        height: 100vh;
+        background-color: transparent;
+      
+    }
+    .container-derecha{
+        justify-content: center;
+        
+    }
+    .contenido-derecha-titulo h1{
+        font-size: 5vw;
+        text-align: center;
+    }
+    .contenido-derecha-texto{
+        width: 90vw;
+        
+    }
+    .contenido-derecha-texto p{
+        text-align: left;
+       
+    }
+    .container-formulario{
+        width: 100vw;
+
+    }
+    .contenido-formulario{
+        justify-content: center;
+    }
+    .titulo__formulario{
+        font-size: 5vw;
+        text-align: center;
+    }
+    .contenido-formulario label{
+        text-align: left;
+        font-size: 5vw;
+    }
+    .contenido-formulario input{
+       width: 90vw;
+        font-size: 5vw;
+    }
+    .contenido-formulario input:focus{
+        outline: none;
+    }
+    .contenido-formulario select{
+        width: 90vw;
+        font-size: 5vw;
+    }
+   
+    
+}
