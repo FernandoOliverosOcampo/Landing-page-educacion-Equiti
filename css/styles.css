@@ -1,0 +1,307 @@
+@import url(./global/global.css);
+.swal-custom-confirm-button {
+    background-color: #6C63FF;
+    color: #ffffff;
+  }
+  
+  .swal-custom-cancel-button {
+    background-color: #d33;
+    color: #ffffff;
+  }
+.hero nav {
+    background-color: #191919;
+}
+
+.hero nav .logo-equiti {
+    display: flex;
+    justify-content: center;
+}
+
+.hero nav .logo-equiti img {
+    height: 10vh;
+    width: auto;
+}
+
+
+.hero .contenedor .pagina-principal {
+    display: grid;
+    grid-template-areas:
+        "textos imagen"
+        "ola ola";
+    column-gap: 2vh;
+    justify-content: center;
+    align-content: center;
+    padding: 5vw 0;
+    height: 100vh;
+}
+
+.pagina-principal .ola {
+    grid-area: ola;
+    height: 40vh; 
+    overflow: hidden;
+   
+
+}
+.pagina-principal .ola svg {
+    width: 100%; 
+    height: auto;
+}
+.pagina-principal img {
+    height: 20vh;
+}
+
+.hero .contenedor nav {
+    display: grid;
+    justify-items: center;
+}
+
+.hero .contenedor nav img {
+    height: 15vh;
+    width: auto;
+}
+
+.pagina-principal .lado-izq {
+    grid-area: textos;
+    padding: 0 5vw;
+}
+
+.pagina-principal .lado-der {
+    grid-area: imagen;
+    padding: 0 5vw;
+}
+
+.pagina-principal .lado-izq .cap {
+    display: grid;
+}
+
+.pagina-principal .lado-izq .cap img {
+    height: 10vh;
+    width: auto;
+}
+
+.pagina-principal .lado-izq .texto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+
+.pagina-principal .lado-izq .texto .titulo p {
+    font-size: 5vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.color-morado {
+    color: #6C63FF;
+}
+
+.mayuscula {
+    font-size: 10vh;
+}
+
+.pagina-principal .lado-izq .texto .subtitulo p {
+    font-size: 3vh;
+}
+
+.pagina-principal .lado-izq .texto .boton button {
+    background-color: #6C63FF;
+    color: #ffffff;
+    font-size: 2.5vh;
+}
+.pagina-principal .lado-izq .texto .boton button:hover{
+    background-color: #8781fc;
+}
+
+.pagina-principal .lado-der .img-central {
+    display: grid;
+    place-items: center;
+}
+
+.pagina-principal .lado-der .img-central img {
+    height: 50vh;
+    width: auto;
+}
+
+.hero .contenedor .aliados .contenido {
+    display: grid;
+    text-align: center;
+}
+
+.hero .contenedor .aliados .contenido .titulo h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.aliados .contenido .universidades {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+}
+
+.aliados .contenido .universidades .universidad {
+    display: flex;
+    column-gap: 5vw;
+}
+
+.aliados .contenido .universidades .universidad .texto p {
+    font-size: 2.2vw;
+    font-weight: bold;
+}
+
+.aliados .contenido .universidades .contenedor-universidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    row-gap: 2vw;
+    column-gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 0;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja {
+    background-color: #191919;
+    border-radius: 1vw;
+    width: 40vw;
+    display: grid;
+    grid-template-areas:
+        "imagen descuento"
+        "imagen boton";
+    height: 40vh;
+    color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .imagen {
+    grid-area: imagen;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .boton {
+    grid-area: boton;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .titulo {
+    grid-area: descuento;
+    font-size: 5vw;
+    border-radius: 50%;
+    padding: 1vw;
+    font-weight: bold;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .boton button {
+    background-color: #6C63FF;
+    color: #ffffff;
+    width: 15vw;
+}
+
+.aliados .contenido .universidades .contenedor-universidades .caja .imagen img {
+    height: 30vh;
+    width: auto;
+}
+
+.contenido-derecha-texto p {
+    text-align: center;
+}
+
+.formulario {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container-formulario {
+    grid-area: formulario;
+}
+
+.hero .contenedor .formulario .container-formulario {
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "contenido";
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 40vw;
+    padding: 15px;
+}
+
+.titulo-formulario {
+    grid-area: titulo;
+}
+
+.contenido-formulario {
+    grid-area: contenido;
+    display: grid;
+    grid-template-areas:
+        "formulario"
+        "botones";
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+    overflow: auto;
+
+}
+
+.formulario-contenido {
+    grid-area: formulario;
+}
+
+.botones-formulario {
+    grid-area: botones;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.titulo__formulario {
+    font-size: 2.2vw;
+    text-align: center;
+}
+
+.contenido-formulario label {
+    padding-left: 15px;
+}
+
+.contenido-formulario input {
+    margin: 10px;
+    width: auto;
+    height: 5vh;
+    width: 35vw;
+    padding-left: 10px;
+    border: transparent;
+    border-bottom: 1px solid #191919;
+    font-size: 1.2vw;
+}
+
+.contenido-formulario input:focus {
+    outline: none;
+}
+
+.contenido-formulario select {
+    margin: 15px;
+    width: auto;
+    height: 5vh;
+    width: 36vw;
+    padding-left: 10px;
+    border: transparent;
+    border-bottom: 1px solid #191919;
+    font-size: 1.2vw;
+}
+
+.contenido-formulario select:focus {
+    outline: none;
+}
+.botones-formulario button{
+    background-color: #6C63FF;
+    color: white;
+    width: 15vw;
+}
+.botones-formulario button:hover{
+    background-color: #8781fc;
+}

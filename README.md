@@ -1,1 +1,1 @@
-# Landing-page-educacion-Equiti
+# universidades
